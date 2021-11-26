@@ -1,0 +1,49 @@
+{
+  "name": "html-webpack-inject-script-plugin",
+  "version": "1.0.0",
+  "description": "inject source in script tag to html",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix",
+    "prepublishOnly": "npm run build",
+    "build": "babel src -d lib --extensions .ts & tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:leoDreamer/html-webpack-inject-script-plugin.git"
+  },
+  "keywords": [
+    "webpack-plugin",
+    "webpack",
+    "publicPath"
+  ],
+  "author": "leo <lichuan_leo@163.com> (http://blog.wwjd.top)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com:leoDreamer/html-webpack-inject-script-plugin/issues"
+  },
+  "homepage": "https://github.com:leoDreamer/html-webpack-inject-script-plugin#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@opd/eslint-config-typescript": "^1.13.5",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.0.5",
+    "typescript": "^4.2.3",
+    "webpack": "^5.60.0"
+  },
+  "peerDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.26.3"
+  },
+  "engines": {
+    "node": ">= 10"
+  }
+}
