@@ -1,5 +1,5 @@
 {
-  "name": "html-webpack-inject-script-plugin",
+  "name": "html-webpack-source-to-script-plugin",
   "version": "1.0.0",
   "description": "inject source in script tag to html",
   "main": "lib/index.js",

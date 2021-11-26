@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-npm install --save-dev html-webpack-inject-script-plugin
+npm install --save-dev html-webpack-source-to-script-plugin
 ```
 
 ## Usage
@@ -21,10 +21,10 @@ npm install --save-dev html-webpack-inject-script-plugin
 Require the plugin in your webpack config
 
 ```javascript
-import HtmlWebpackInjectPlugin from 'html-webpack-inject-script-plugin'
+import HtmlWebpackInjectScriptPlugin from 'html-webpack-source-to-script-plugin'
 // or
-const HtmlWebpackInjectPlugin =
-  require('html-webpack-inject-script-plugin').default
+const HtmlWebpackInjectScriptPlugin =
+  require('html-webpack-source-to-script-plugin').default
 ```
 
 Add the plugin to your webpack config as follows
